@@ -30,7 +30,7 @@
     <main>
         <div class="main1">
         <div class="lmain">
-            <div class="greets">Hello, I'm</div>
+            <div id="greet"class="greets">Hello, I'm</div>
             <div class="name">Ankush Kumar Yadav</div>
             <div class="about"><p>
                 MERN Stack Developer with expertise in MongoDB,
@@ -155,7 +155,7 @@
     <script>
          document.querySelector('#about').addEventListener('click',(e)=>{
              e.preventDefault()
-             document.querySelector('.about').scrollIntoView({
+             document.querySelector('.greets').scrollIntoView({
                 behavior:"smooth"
              })
         })
