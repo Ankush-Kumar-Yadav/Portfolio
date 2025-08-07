@@ -44,7 +44,7 @@
                    high-quality solutions that meet user and business needs.
             </p></div>
             <div class="button">
-                <button> <i class="fas fa-paper-plane"></i> Get In Touch</button>
+                <button id="touch" > <i class="fas fa-paper-plane"></i> Get In Touch</button>
                 <button><a href="./Resume_Ankush.pdf"><i class="fas fa-file-pdf"></i>Resume</a></button>
             </div>
         </div>
@@ -81,15 +81,13 @@
            <div class="pro1"> 
             <div class="pro">
             <p>
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi rem reiciendis,
-              eligendi nisi expedita deserunt ipsam. Optio, doloremque ullam.
-             Recusandae explicabo iste dolore error dicta deleniti natus ab officiis magni.
+           Brain Boosters is an AI-powered e-learning platform built using the MERN stack (MongoDB, Express.js, React.js, Node.js). It enables educators to create and sell courses while allowing learners to access high-quality content, track progress, and even get help from AI tools.
              </p>
             <div class="project-links"></div>
-                <a href="https://github.com/yourusername/yourproject" target="_blank">
+                <a href="https://github.com/Ankush-Kumar-Yadav/Brain-Booster" target="_blank">
                     <i class="fa-brands fa-github"></i> View on GitHub
                 </a>
-                <a href="https://yourprojectdemo.com" target="_blank">
+                <a href="https://github.com/Ankush-Kumar-Yadav/Brain-Booster" target="_blank">
                     <i class="fa-solid fa-globe"></i> Live Demo
                 </a>
             </div>
@@ -154,6 +152,38 @@
     </div>
 </div>
     </footer>
+    <script>
+         document.querySelector('#about').addEventListener('click',(e)=>{
+             e.preventDefault()
+             document.querySelector('.about').scrollIntoView({
+                behavior:"smooth"
+             })
+        })
+        document.querySelector('#project').addEventListener('click',(e)=>{
+             e.preventDefault()
+             document.querySelector('.project').scrollIntoView({
+                behavior:"smooth"
+             })
+        })
+         document.querySelector('#education').addEventListener('click',(e)=>{
+             e.preventDefault()
+             document.querySelector('.education').scrollIntoView({
+                behavior:"smooth"
+             })
+        })
+        document.querySelector('#contact').addEventListener('click',(e)=>{
+             e.preventDefault()
+             document.querySelector('.contact').scrollIntoView({
+                behavior:"smooth"
+             })
+        })
+        document.querySelector('#touch').addEventListener('click',(e)=>{
+             e.preventDefault()
+             document.querySelector('.contact').scrollIntoView({
+                behavior:"smooth"
+             })
+        })
+    </script>
 </body>
 </html>
  
