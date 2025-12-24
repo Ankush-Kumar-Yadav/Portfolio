@@ -27,33 +27,34 @@
   box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3);
 }
 
-    .project-card {
-      position: relative;
-      height: 300px;
-      background: url("image.png") center/cover no-repeat;
-      overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    }
+ .project-card {
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
 
-    .project-overlay {
-      position: absolute;
-      inset: 0;
-      background: rgba(59,130,246,0.85);
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 20px;
-      opacity: 0;
-      transform: translateY(100%);
-      transition: 0.4s ease;
-    }
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(59, 130, 246, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.4s ease;
+}
 
-    .project-card:hover .project-overlay {
-      opacity: 1;
-      transform: translateY(0);
-    }
+.project-card:hover .project-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
   </style>
 </head>
 
@@ -123,7 +124,7 @@
     <div class="col-lg-6 text-center mt-5 mt-lg-0">
       <div class="hero-img-wrapper mx-auto">
         <img
-          src="image.png"
+          src="hero.png"
           alt="AI Developer Illustration"
           class="img-fluid"
         />
@@ -170,54 +171,157 @@
   <h2 class="fw-bold text-center mb-4">Projects</h2>
 
   <div class="row g-4">
+
+    <!-- PROJECT 1 -->
     <div class="col-md-6">
-      <div class="project-card rounded">
+      <div 
+        class="project-card rounded"
+        style="background-image: url('pro-1.png');"
+      >
         <div class="project-overlay">
           <div>
-            <p>
-              Brain Boosters is an AI-powered MERN e-learning platform.
-            </p>
-            <a class="btn btn-light btn-sm me-2" href="#">GitHub</a>
-            <a class="btn btn-outline-light btn-sm" href="#">Live</a>
+            <p>Web Oak Infotech Portfolio Website</p>
+            <a 
+              class="btn btn-outline-light btn-sm"
+              href="https://www.weboakinfotech.com/"
+              target="_blank"
+            >
+              Live
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div 
+        class="project-card rounded"
+        style="background-image: url('pro-3.png');"
+      >
+        <div class="project-overlay">
+          <div>
+            <p>Web Oak Infotech Portfolio Website</p>
+            <a 
+              class="btn btn-outline-light btn-sm"
+              href="https://www.weboakinfotech.com/"
+              target="_blank"
+            >
+              Live
+            </a>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- PROJECT 2 -->
     <div class="col-md-6">
-      <div class="project-card rounded">
+      <div 
+        class="project-card rounded"
+        style="background-image: url('pro-2.png');"
+      >
         <div class="project-overlay">
           <div>
-            <p>Another MERN-based project</p>
-            <a class="btn btn-light btn-sm me-2" href="#">GitHub</a>
-            <a class="btn btn-outline-light btn-sm" href="#">Live</a>
+            <p>Elysia Language Institute</p>
+            <a 
+              class="btn btn-outline-light btn-sm"
+              href="https://elysialanguage.com/"
+              target="_blank"
+            >
+              Live
+            </a>
           </div>
         </div>
       </div>
     </div>
+
+    
+
   </div>
 </section>
+
 
 <!-- ================= CONTACT ================= -->
 <section id="contact" class="container py-5">
   <h2 class="fw-bold text-center mb-4">Contact</h2>
 
-  <div class="row g-4">
+  <div class="row g-4 align-items-start">
+
+    <!-- LEFT INFO + SOCIALS -->
     <div class="col-md-6">
-      <p><strong>Email:</strong> ankuskyadav8437@gmail.com</p>
-      <p><strong>Address:</strong> Mohali, Punjab, India</p>
+      <p class="fs-5">
+        <strong>Email:</strong><br>
+        <a href="mailto:ankuskyadav8437@gmail.com" class="text-primary text-decoration-none">
+          ankuskyadav8437@gmail.com
+        </a>
+      </p>
+
+      <p class="fs-5">
+        <strong>Address:</strong><br>
+        Mohali, Punjab, India
+      </p>
+
+      <!-- SOCIAL LINKS -->
+      <div class="mt-4">
+        <p class="fw-bold mb-2">Connect with me</p>
+        <div class="d-flex gap-3 fs-3">
+
+          <a href="https://github.com/Ankush-Kumar-Yadav"
+             target="_blank"
+             class="text-dark"
+             title="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/ankush-kumar-yadav-26494028b/"
+             target="_blank"
+             class="text-primary"
+             title="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+
+          <a href="https://leetcode.com/u/Ankush_Kumar_Yadav/"
+             target="_blank"
+             class="text-warning"
+             title="LeetCode">
+            <i class="fa-solid fa-code"></i>
+          </a>
+
+        </div>
+      </div>
     </div>
 
+    <!-- RIGHT FORM -->
     <div class="col-md-6">
       <form class="card p-4 shadow-sm">
-        <input class="form-control mb-3" placeholder="Name">
-        <input class="form-control mb-3" placeholder="Email">
-        <textarea class="form-control mb-3" rows="4" placeholder="Message"></textarea>
-        <button class="btn btn-primary">Send Message</button>
+        <input
+          type="text"
+          class="form-control mb-3"
+          placeholder="Your Name"
+          required
+        >
+
+        <input
+          type="email"
+          class="form-control mb-3"
+          placeholder="Your Email"
+          required
+        >
+
+        <textarea
+          class="form-control mb-3"
+          rows="4"
+          placeholder="Your Message"
+          required
+        ></textarea>
+
+        <button class="btn btn-primary w-100">
+          Send Message
+        </button>
       </form>
     </div>
+
   </div>
 </section>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
